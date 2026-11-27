@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intellecta — o mesmo conteúdo vira leitura, audiobook, vídeo e curso | Kairos Digital</title>
+  <meta name="description" content="O painel operacional em produção da Kairos: um conteúdo vira quatro formatos, com níveis de acesso por cargo, a marca da sua empresa na interface e o dado separado por conta. Agende uma demonstração.">
+  <meta property="og:title" content="Intellecta — o mesmo conteúdo vira leitura, audiobook, vídeo e curso">
+  <meta property="og:description" content="Painel operacional white-label em produção: níveis de acesso por cargo, cor da sua marca e dado isolado por empresa. Agende uma demonstração.">
+  <meta property="og:image" content="https://matheusschelle.github.io/campanha-vendas/intellecta/img/login-desktop.webp">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- GTM (substituir pelo ID do container da campanha antes de escalar) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <style>
+    :root{
+      --bg:#0A0A0F; --ink:#F5F4F0; --muted:#A8A6B3; --line:rgba(255,255,255,.10);
+      --accent:#22D3EE; --accent-ink:#04141A;
+      --g1:#4F8DF9; --g2:#E85BB0;
+      --radius:14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:
+      radial-gradient(900px 520px at 85% -8%, rgba(34,211,238,.10), transparent 60%),
+      radial-gradient(700px 460px at -12% 30%, rgba(79,141,249,.08), transparent 55%), var(--bg);
+      color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    .container{width:100%;max-width:760px;margin:0 auto;padding:0 20px}
+    .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);padding:10px 16px;z-index:99;border-radius:0 0 8px 0;font-weight:700}
+    .skip:focus{left:0}
+    header.topo{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+    .marca{display:flex;align-items:center;gap:12px}
+    .marca img{height:44px;mix-blend-mode:screen}
+    .marca b{font-size:15px;letter-spacing:.14em;font-weight:800}
+    .btn-mini{font-size:14px;font-weight:700;color:var(--accent);border:1.5px solid rgba(34,211,238,.55);border-radius:999px;padding:10px 18px;text-decoration:none}
+    .hero{padding:56px 0 34px;text-align:center}
+    .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+    .eyebrow b{color:var(--ink)}
+    h1{font-size:clamp(34px,7.4vw,54px);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:18px auto 0;max-width:22ch}
+    h1 .hl{color:var(--accent)}
+    .sub{font-size:clamp(16px,2.6vw,19px);color:var(--muted);margin:20px auto 0;max-width:56ch}
+    .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;text-decoration:none;border-radius:999px;transition:transform .15s ease, box-shadow .15s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(34,211,238,.22)}
+    .btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--g1);outline-offset:3px}
+    .btn-grande{font-size:19px;padding:20px 42px;margin-top:30px;width:100%;max-width:420px}
+    .micro{font-size:13.5px;color:var(--muted);margin-top:14px}
+    /* moldura de navegador (captura real do acesso) */
+    .browser-frame{background:#101319;border:1px solid rgba(255,255,255,.15);border-radius:18px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.55);margin:44px auto 0;width:100%}
+    .browser-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#0B0E13;border-bottom:1px solid rgba(255,255,255,.08)}
+    .browser-bar i{width:11px;height:11px;border-radius:50%;background:#3A4150;display:block}
+    .browser-bar i:first-child{background:#FF5F57}.browser-bar i:nth-child(2){background:#FEBC2E}.browser-bar i:nth-child(3){background:#28C840}
+    .browser-url{flex:1;text-align:center;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);background:rgba(255,255,255,.05);border-radius:8px;padding:5px 10px;margin:0 10px}
+    section.bloco{padding:44px 0}
+    .titulo-secao{font-size:clamp(24px,4.6vw,34px);font-weight:800;letter-spacing:-.015em;line-height:1.15}
+    .titulo-secao .hl{color:var(--accent)}
+    .apoio-secao{color:var(--muted);margin-top:12px;font-size:16.5px;max-width:58ch}
+    /* vídeo */
+    .video-wrap{position:relative;margin-top:26px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+    .video-wrap video,.video-wrap img.poster{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+    .play-btn{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;border:none;background:rgba(10,10,15,.72);backdrop-filter:blur(4px);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+    .play-btn::after{content:"";display:block;width:0;height:0;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:7px}
+    .play-btn:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .video-nota{position:absolute;left:14px;bottom:14px;background:rgba(10,10,15,.8);border:1px solid var(--line);color:var(--muted);font-size:12.5px;padding:7px 12px;border-radius:999px}
+    /* demo interativa (abas por nível de acesso) */
+    .tabs{margin-top:24px}
+    .tablist{display:flex;gap:8px;flex-wrap:wrap}
+    .tab{flex:1;min-width:118px;background:transparent;border:1.5px solid var(--line);color:var(--muted);font-weight:700;font-size:14px;padding:12px 10px;border-radius:12px;cursor:pointer;transition:border-color .15s,color .15s}
+    .tab[aria-selected="true"]{border-color:var(--accent);color:var(--ink);background:rgba(34,211,238,.08)}
+    .painel-tab{margin-top:16px;display:none}
+    .painel-tab.ativo{display:block}
+    .papel-card{border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px;background:rgba(255,255,255,.02)}
+    .papel-card h3{font-size:18px;font-weight:800}
+    .papel-card .cargo{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+    .ve{list-style:none;margin-top:12px}
+    .ve li{padding:8px 0 8px 30px;position:relative;font-size:15.5px;color:var(--muted);border-bottom:1px dashed var(--line)}
+    .ve li:last-child{border-bottom:none}
+    .ve li.ok::before{content:"✓";position:absolute;left:2px;color:var(--accent);font-weight:800}
+    .ve li.nao::before{content:"✕";position:absolute;left:2px;color:#F87171;font-weight:800}
+    /* demo white-label */
+    .wl{margin-top:26px;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px;background:rgba(255,255,255,.02)}
+    .wl-rota{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .wl-swatch{border:1.5px solid var(--line);background:transparent;color:var(--muted);font-weight:700;font-size:13.5px;border-radius:999px;padding:9px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+    .wl-swatch::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--sw)}
+    .wl-card{--wl:#22D3EE;margin-top:16px;border:1px solid color-mix(in srgb, var(--wl) 45%, transparent);border-radius:14px;padding:18px;background:color-mix(in srgb, var(--wl) 7%, transparent)}
+    .wl-chip{display:inline-block;background:color-mix(in srgb, var(--wl) 22%, transparent);color:var(--wl);font-size:12.5px;font-weight:800;letter-spacing:.06em;border-radius:999px;padding:6px 14px;text-transform:uppercase}
+    .wl-titulo{font-size:17px;font-weight:800;margin-top:10px}
+    .wl-texto{color:var(--muted);font-size:14.5px;margin-top:6px}
+    /* benefícios */
+    .benefit{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+    .benefit:last-child{border-bottom:none}
+    .chk{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:rgba(34,211,238,.14);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+    .benefit b{display:block;font-size:17px;font-weight:700}
+    .benefit span{color:var(--muted);font-size:15px}
+    /* prova */
+    .prova{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-top:22px}
+    .prova ul{list-style:none;margin-top:6px}
+    .prova li{padding:10px 0 10px 26px;position:relative;font-size:15.5px;border-bottom:1px dashed var(--line)}
+    .prova li:last-child{border-bottom:none}
+    .prova li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+    code{font-family:ui-monospace,Menlo,monospace;font-size:.92em;background:rgba(255,255,255,.08);padding:2px 7px;border-radius:6px}
+    .tel-frame{background:#000;border:1px solid rgba(255,255,255,.15);border-radius:44px;padding:10px;box-shadow:0 40px 90px rgba(0,0,0,.6);width:min(300px,78vw);margin:26px auto 0}
+    .tel-frame img{border-radius:34px}
+    /* objeções */
+    details.obj{border:1px solid var(--line);border-radius:12px;margin-top:12px;background:rgba(255,255,255,.02)}
+    summary{cursor:pointer;padding:18px 20px;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";color:var(--accent);font-size:22px;line-height:1;flex-shrink:0}
+    details[open] summary::after{content:"–"}
+    .obj p{padding:0 20px 18px;color:var(--muted);font-size:15.5px}
+    /* cta final */
+    .final{text-align:center;padding:56px 0 40px}
+    .qr-final{width:150px;background:#fff;border-radius:16px;padding:10px;margin:28px auto 8px}
+    footer{border-top:1px solid var(--line);padding:26px 0 90px;text-align:center;color:var(--muted);font-size:13.5px}
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(10,10,15,.92);backdrop-filter:blur(10px);box-shadow:0 -4px 18px rgba(0,0,0,.5);z-index:50;display:none}
+    .sticky-cta .btn{width:100%;text-align:center;font-size:16.5px;padding:16px 20px}
+    @media (min-width:768px){.btn-grande{width:auto;min-width:340px}}
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *{transition:none!important;animation:none!important}
+      .btn:hover{transform:none}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="container">
+    <header class="topo">
+      <span class="marca"><img src="img/logo-kairos.png" alt="Kairos Digital" width="44" height="44"><b>INTELLECTA</b></span>
+      <a class="btn-mini" href="https://wa.me/5562984924326?text=Quero%20agendar%20a%20demonstra%C3%A7%C3%A3o%20da%20Intellecta" target="_blank" rel="noopener noreferrer">Agendar demonstração</a>
+    </header>
+  </div>
+
+  <main id="conteudo">
+    <!-- HERO: proposta de valor + CTA no topo -->
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow"><b>Kairos Digital</b> · SaaS em produção</p>
+        <p class="eyebrow" style="margin-top:6px;color:var(--accent)">Painel operacional white-label · multi-tenant · auth real</p>
+        <h1>O mesmo conteúdo vira <span class="hl">leitura, audiobook, vídeo e curso.</span></h1>
+        <p class="sub">Você produz uma vez. A Intellecta distribui em quatro portas de entrada — e por trás roda um painel operacional onde cada cargo vê exatamente a própria mesa, a interface veste a sua marca e o dado de cada empresa fica separado por conta.</p>
+        <a class="btn btn-grande" id="cta-hero" href="https://wa.me/5562984924326?text=Quero%20agendar%20a%20demonstra%C3%A7%C3%A3o%20da%20Intellecta" target="_blank" rel="noopener noreferrer">Agendar demonstração</a>
+        <p class="micro">WhatsApp (62) 98492-4326 · resposta em horário comercial · sem compromisso</p>
+        <figure>
+          <div class="browser-frame">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="browser-url">kairos-dashboard-demo.vercel.app/login</span></div>
+            <img src="img/login-desktop.webp" alt="Tela real do acesso ao painel: Kairós Painel Operacional, com campos de usuário e senha e aviso de acesso restrito" width="1280" height="800">
+          </div>
+          <figcaption class="micro">Tela real do acesso, capturada em 27/11/2026 — sem mock, sem persona.</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <!-- VÍDEO (poster + play; MP4 chega do repositório de vídeo) -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-video">
+        <h2 class="titulo-secao" id="t-video">Veja o conteúdo <span class="hl">caminhar até o cliente.</span></h2>
+        <p class="apoio-secao">Do cadastro feito pelo vendedor ao cliente aproveitando leitura, audiobook, vídeo ou curso — o fluxo completo, em telas reais.</p>
+        <div class="video-wrap">
+          <video id="demo-video" poster="img/login-desktop.webp" controls preload="none" playsinline width="1400" height="788">
+            <!-- Quando o MP4 chegar do repositório de vídeo, descomentar:
+            <source src="video/demo.mp4" type="video/mp4">
+            <track kind="captions" src="video/demo.vtt" srclang="pt-BR" label="Português" default>
+            -->
+          </video>
+          <button class="play-btn" id="play-btn" type="button" aria-label="Reproduzir vídeo de demonstração (em produção)"></button>
+          <span class="video-nota" id="video-nota">Vídeo em produção · capturas reais abaixo</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- DEMO INTERATIVA: os cinco níveis de acesso -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-demo">
+        <h2 class="titulo-secao" id="t-demo">Cinco níveis de acesso. <span class="hl">Ninguém vê além da própria mesa.</span></h2>
+        <p class="apoio-secao">Toque no cargo (ou use as setas do teclado) para ver o que ele enxerga e o que fica fora do alcance dele.</p>
+        <div class="tabs">
+          <div class="tablist" role="tablist" aria-label="Níveis de acesso do painel">
+            <button class="tab" role="tab" id="tab-1" aria-selected="true" aria-controls="painel-1">Vendedor</button>
+            <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="painel-2" tabindex="-1">Gerente</button>
+            <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="painel-3" tabindex="-1">Admin</button>
+            <button class="tab" role="tab" id="tab-4" aria-selected="false" aria-controls="painel-4" tabindex="-1">Usuário</button>
+            <button class="tab" role="tab" id="tab-5" aria-selected="false" aria-controls="painel-5" tabindex="-1">Dev</button>
+          </div>
+          <div class="painel-tab ativo" role="tabpanel" id="painel-1" aria-labelledby="tab-1">
+            <div class="papel-card">
+              <p class="cargo">Nível 1</p><h3>Vendedor</h3>
+              <ul class="ve">
+                <li class="ok">Vê seus clientes, os documentos anexados e as vendas que você registrou.</li>
+                <li class="ok">Vê os colegas do seu time — o mesmo limite vale na base de dados: só chega o que é da sua gerência.</li>
+                <li class="ok">Cadastra o cliente com plano, contato e documentos; conversa direto pelo WhatsApp da empresa.</li>
+                <li class="nao">Não vê equipes de outra gerência nem o nível dev.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="painel-tab" role="tabpanel" id="painel-2" aria-labelledby="tab-2" hidden>
+            <div class="papel-card">
+              <p class="cargo">Nível 2</p><h3>Gerente</h3>
+              <ul class="ve">
+                <li class="ok">Recebe a fila de cadastros do time e libera o cliente com um toque.</li>
+                <li class="ok">Acompanha vendas do time — hoje, semana e mês — com ranking por vendedor.</li>
+                <li class="ok">Vê os status da carteira: ativos, em análise e suspensos.</li>
+                <li class="nao">Não vê outras empresas: cada tenant tem sua operação separada.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="painel-tab" role="tabpanel" id="painel-3" aria-labelledby="tab-3" hidden>
+            <div class="papel-card">
+              <p class="cargo">Nível 3</p><h3>Admin</h3>
+              <ul class="ve">
+                <li class="ok">Opera a empresa inteira: usuários, status de conta e documentos.</li>
+                <li class="ok">Define a marca do painel — a cor da sua empresa repinta a interface.</li>
+                <li class="nao">Não vê o nível dev: quem cuida da plataforma fica invisível para o admin do cliente.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="painel-tab" role="tabpanel" id="painel-4" aria-labelledby="tab-4" hidden>
+            <div class="papel-card">
+              <p class="cargo">Nível 4</p><h3>Usuário (quem consome)</h3>
+              <ul class="ve">
+                <li class="ok">Vê o estado claro da própria conta: ativa, em análise ou suspensa — com o próximo passo em cada caso.</li>
+                <li class="ok">Conta aprovada vira acesso ao conteúdo: leitura, audiobook, vídeo ou curso, do jeito que o momento pedir.</li>
+                <li class="nao">Não vê o cadastro dos outros: cada conta enxerga só o próprio estado.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="painel-tab" role="tabpanel" id="painel-5" aria-labelledby="tab-5" hidden>
+            <div class="papel-card">
+              <p class="cargo">Nível 5</p><h3>Dev</h3>
+              <ul class="ve">
+                <li class="ok">Visão global entre tenants para diagnóstico da plataforma — sem depender do admin do cliente.</li>
+                <li class="nao">Invisível para o admin: o nível técnico existe, mas não aparece no painel do cliente.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- white-label: troque a cor na hora -->
+        <div class="wl">
+          <h3 style="font-size:18px;font-weight:800">A interface veste a sua marca.</h3>
+          <p class="apoio-secao" style="margin-top:8px">Escolha uma cor de marca — o cartão abaixo é repintado na hora, como acontece no painel quando o tenant troca. Nenhum componente é reescrito: a cor entra como variável CSS e o todo acompanha.</p>
+          <div class="wl-rota" role="group" aria-label="Escolher cor de marca de exemplo">
+            <button class="wl-swatch" type="button" style="--sw:#22D3EE" data-wl="#22D3EE" data-nome="Ciano" aria-pressed="true">Ciano</button>
+            <button class="wl-swatch" type="button" style="--sw:#34D399" data-wl="#34D399" data-nome="Esmeralda" aria-pressed="false">Esmeralda</button>
+            <button class="wl-swatch" type="button" style="--sw:#F472B6" data-wl="#F472B6" data-nome="Rosa" aria-pressed="false">Rosa</button>
+          </div>
+          <div class="wl-card" id="wl-card">
+            <span class="wl-chip">Painel do seu cliente</span>
+            <p class="wl-titulo">Bem-vindo à operação</p>
+            <p class="wl-texto" id="wl-status">Cor de marca aplicada em runtime: ciano (padrão).</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- BENEFÍCIOS ligados ao fluxo real -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-ben">
+        <h2 class="titulo-secao" id="t-ben">O que muda <span class="hl">na sua operação.</span></h2>
+        <div style="margin-top:20px">
+          <div class="benefit"><span class="chk">✓</span><div><b>Um conteúdo, quatro portas de entrada</b><span>A mesma fonte vira leitura, audiobook, vídeo e curso. O cliente entra pelo formato que o momento pede — sem você produzir quatro vezes.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>Cadastro com análise, não com planilha</b><span>O vendedor cadastra o cliente com os documentos, a conta cai na fila do gerente, sai aprovada com um toque e o usuário é avisado.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>Cada cargo vê o tamanho exato da própria mesa</b><span>Vendedor só vê o próprio time, admin não vê o dev, cada empresa só vê o próprio dado. O limite não é combinado — está na regra da base de dados.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>O painel nasce com a sua cor</b><span>White-label por variável de marca aplicada em runtime, com tema claro ou escuro decidido no servidor — a interface abre já certa, sem flash.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>Suspensão sem dor</b><span>Conta suspensa cai numa tela de espera clara, não num painel oco — e o histórico segue protegido pelo isolamento entre empresas.</span></div></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROVA VERIFICÁVEL -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-prova">
+        <h2 class="titulo-secao" id="t-prova">Isso não é promessa. <span class="hl">Está rodando hoje.</span></h2>
+        <div class="prova">
+          <ul>
+            <li>Em produção agora: <code>kairos-dashboard-demo.vercel.app</code> — login com autenticação Supabase real, sem mock e sem persona. As capturas desta página saíram dele em 27/11/2026.</li>
+            <li>Multi-tenant com isolamento por RLS: o dado de uma empresa não vaza para outra — inclusive nos quatro pontos onde costuma vazar (nova policy, chave <code>service_role</code>, backfill e view comum), já tratados.</li>
+            <li>Há cliente de produção operando na plataforma — é o produto SaaS mais maduro da Kairos.</li>
+            <li>O que fica por dentro da conta (fila do gerente, ranking do time, carteira) você vê na demonstração ao vivo — esta página mostra o acesso real, que está aberto para visita.</li>
+          </ul>
+        </div>
+        <figure>
+          <div class="tel-frame"><img src="img/login-mobile.webp" alt="Tela real do acesso no celular: formulário de usuário e senha do Painel Operacional" width="780" height="1688" loading="lazy"></div>
+          <figcaption class="micro">O acesso funciona do mesmo jeito no celular — captura real de 27/11/2026.</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <!-- OBJEÇÕES -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-ob">
+        <h2 class="titulo-secao" id="t-ob">O que todo mundo pergunta <span class="hl">antes de decidir.</span></h2>
+        <details class="obj"><summary>Minha empresa divide tela com outras?</summary><p>Não. Cada empresa é um tenant com cor de marca própria e dado isolado por regra de segurança na base (RLS). A marca de um cliente nunca aparece no painel do outro.</p></details>
+        <details class="obj"><summary>Vou precisar de desenvolvedor para usar minha marca?</summary><p>Não. A cor da sua marca entra como variável CSS e repinta o painel inteiro em runtime — nenhum componente precisa ser reescrito. Na demonstração a gente troca a cor na sua frente.</p></details>
+        <details class="obj"><summary>Minha equipe vai ver mais do que deveria?</summary><p>Não. Existem cinco níveis de acesso: o vendedor vê o próprio time, o gerente vê a fila e o ranking, o admin opera a empresa sem ver o nível dev, e o usuário final vê só o estado da própria conta.</p></details>
+        <details class="obj"><summary>E quando alguém sair da equipe ou eu suspender uma conta?</summary><p>O status vira “suspensa”: a pessoa cai na tela de espera em vez de entrar num painel vazio, e o histórico continua protegido pelo isolamento entre empresas.</p></details>
+        <details class="obj"><summary>Já tem alguém usando de verdade?</summary><p>Sim. Há cliente de produção em operação — é o SaaS mais maduro da casa. Na demonstração o fluxo completo roda com dados reais, sem persona e sem cenário montado.</p></details>
+      </section>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="container">
+      <section class="bloco final" aria-labelledby="t-final">
+        <h2 class="titulo-secao" id="t-final">Produza uma vez. <span class="hl">Entregue em quatro formatos.</span></h2>
+        <p class="apoio-secao" style="margin-left:auto;margin-right:auto">Uma conversa mostra o painel rodando com a sua marca e o fluxo do primeiro conteúdo até o cliente.</p>
+        <a class="btn btn-grande" id="cta-final" href="https://wa.me/5562984924326?text=Quero%20ver%20a%20Intellecta%20em%20a%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+        <img class="qr-final" src="img/qr-whatsapp.svg" width="150" height="150" alt="QR Code: abre o chat do WhatsApp da Kairos Digital com mensagem pronta">
+        <p class="micro">ou escaneie com a câmera do celular</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">Kairos Digital · Goiânia · 2026 — Intellecta em produção: kairos-dashboard-demo.vercel.app</div>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a class="btn" href="https://wa.me/5562984924326?text=Quero%20agendar%20a%20demonstra%C3%A7%C3%A3o%20da%20Intellecta" target="_blank" rel="noopener noreferrer">Agendar demonstração</a>
+  </div>
+
+  <script>
+    (function(){
+      function track(ev, data){ try{
+        if (typeof dataLayer !== 'undefined') dataLayer.push(Object.assign({event:ev}, data||{}));
+        if (typeof fbq !== 'function') return;
+        fbq('trackCustom', ev, data||{});
+      }catch(e){} }
+
+      // Abas (padrão ARIA tablist com setas do teclado)
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+      var painels = tabs.map(function(t){return document.getElementById(t.getAttribute('aria-controls'));});
+      function ativar(i, foco){
+        tabs.forEach(function(t,j){
+          t.setAttribute('aria-selected', j===i ? 'true':'false');
+          t.tabIndex = j===i ? 0 : -1;
+          painels[j].hidden = j!==i;
+          painels[j].classList.toggle('ativo', j===i);
+        });
+        if (foco) tabs[i].focus();
+        track('demo_tab_view', {tab: tabs[i].textContent.trim(), linha: 'intellecta'});
+      }
+      tabs.forEach(function(t,i){
+        t.addEventListener('click', function(){ ativar(i,false); });
+        t.addEventListener('keydown', function(e){
+          var n = null;
+          if (e.key==='ArrowRight'||e.key==='ArrowDown') n=(i+1)%tabs.length;
+          if (e.key==='ArrowLeft'||e.key==='ArrowUp') n=(i-1+tabs.length)%tabs.length;
+          if (n!==null){ e.preventDefault(); ativar(n,true); }
+        });
+      });
+
+      // White-label demo: troca a variável CSS em runtime (mesmo mecanismo do painel)
+      var wlCard = document.getElementById('wl-card');
+      var wlStatus = document.getElementById('wl-status');
+      document.querySelectorAll('.wl-swatch').forEach(function(s){
+        s.addEventListener('click', function(){
+          wlCard.style.setProperty('--wl', s.getAttribute('data-wl'));
+          wlStatus.textContent = 'Cor de marca aplicada em runtime: ' + s.getAttribute('data-nome').toLowerCase() + '.';
+          document.querySelectorAll('.wl-swatch').forEach(function(x){ x.setAttribute('aria-pressed', x===s ? 'true':'false'); });
+          track('whitelabel_color', {cor: s.getAttribute('data-nome'), linha:'intellecta'});
+        });
+      });
+
+      // Vídeo: estado prévia enquanto o MP4 não chega
+      var video = document.getElementById('demo-video');
+      var nota = document.getElementById('video-nota');
+      var btn = document.getElementById('play-btn');
+      var semFonte = !video.querySelector('source[src]') && !video.getAttribute('src');
+      if (!semFonte) { nota.textContent = ''; btn.style.display='none'; }
+      btn.addEventListener('click', function(){
+        if (semFonte){
+          nota.textContent = 'Vídeo em produção — agende a demonstração e veja ao vivo';
+          track('video_click_preview', {linha:'intellecta'});
+        } else { video.play(); btn.style.display='none'; }
+      });
+
+      // CTAs
+      ['cta-hero','cta-final'].forEach(function(id){
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('click', function(){ track('whatsapp_cta', {posicao:id, linha:'intellecta'}); });
+      });
+
+      // Sticky CTA mobile após passar o hero
+      var sticky = document.getElementById('sticky-cta');
+      var hero = document.querySelector('.hero');
+      if (window.matchMedia('(max-width: 767px)').matches && 'IntersectionObserver' in window){
+        new IntersectionObserver(function(en){ sticky.style.display = en[0].isIntersecting ? 'none':'block'; }, {threshold:0}).observe(hero);
+      }
+    })();
+  </script>
+</body>
+</html>
