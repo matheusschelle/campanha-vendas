@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOCA Card — seu balcão conecta em um toque | Kairos Digital</title>
+  <meta name="description" content="Cartão físico com QR do Instagram, avaliação do Google e Pix. Você muda o destino de cada QR pelo celular, sem reimprimir. Agende uma demonstração.">
+  <meta property="og:title" content="TOCA Card — seu balcão conecta em um toque">
+  <meta property="og:description" content="Instagram, Google e Pix em um único toque. Destinos editáveis pelo celular, sem reimprimir a peça.">
+  <meta property="og:image" content="https://redexglobal.github.io/kairos-campanha/toca-card/img/hub-desktop.webp">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- GTM (substituir pelo ID do container da campanha antes de escalar) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <style>
+    :root{
+      --bg:#0A0A0F; --ink:#F5F4F0; --muted:#A8A6B3; --line:rgba(255,255,255,.10);
+      --accent:#FFB020; --accent-ink:#1A1206;
+      --g1:#4F8DF9; --g2:#E85BB0;
+      --radius:14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;background:
+      radial-gradient(900px 520px at 85% -8%, rgba(79,141,249,.12), transparent 60%),
+      radial-gradient(700px 460px at -12% 30%, rgba(232,91,176,.07), transparent 55%), var(--bg);
+      color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    .container{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+    .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);padding:10px 16px;z-index:99;border-radius:0 0 8px 0;font-weight:700}
+    .skip:focus{left:0}
+    header.topo{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+    .marca{display:flex;align-items:center;gap:12px}
+    .marca img{height:44px;mix-blend-mode:screen}
+    .marca b{font-size:15px;letter-spacing:.14em;font-weight:800}
+    .btn-mini{font-size:14px;font-weight:700;color:var(--accent);border:1.5px solid rgba(255,176,32,.55);border-radius:999px;padding:10px 18px;text-decoration:none}
+    .hero{padding:56px 0 34px;text-align:center}
+    .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+    .eyebrow b{color:var(--ink)}
+    h1{font-size:clamp(34px,7.4vw,54px);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:18px auto 0;max-width:18ch}
+    h1 .hl{color:var(--accent)}
+    .sub{font-size:clamp(16px,2.6vw,19px);color:var(--muted);margin:20px auto 0;max-width:52ch}
+    .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;text-decoration:none;border-radius:999px;transition:transform .15s ease, box-shadow .15s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(255,176,32,.25)}
+    .btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--g1);outline-offset:3px}
+    .btn-grande{font-size:19px;padding:20px 42px;margin-top:30px;width:100%;max-width:420px}
+    .micro{font-size:13.5px;color:var(--muted);margin-top:14px}
+    .tel-frame{background:#000;border:1px solid rgba(255,255,255,.15);border-radius:44px;padding:10px;box-shadow:0 40px 90px rgba(0,0,0,.6);width:min(330px,80vw);margin:44px auto 0}
+    .tel-frame img{border-radius:34px}
+    section.bloco{padding:44px 0}
+    .titulo-secao{font-size:clamp(24px,4.6vw,34px);font-weight:800;letter-spacing:-.015em;line-height:1.15}
+    .titulo-secao .hl{color:var(--accent)}
+    .apoio-secao{color:var(--muted);margin-top:12px;font-size:16.5px;max-width:56ch}
+    /* vídeo */
+    .video-wrap{position:relative;margin-top:26px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+    .video-wrap video,.video-wrap img.poster{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+    .play-btn{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;border:none;background:rgba(10,10,15,.72);backdrop-filter:blur(4px);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+    .play-btn::after{content:"";display:block;width:0;height:0;border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:7px}
+    .play-btn:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .video-nota{position:absolute;left:14px;bottom:14px;background:rgba(10,10,15,.8);border:1px solid var(--line);color:var(--muted);font-size:12.5px;padding:7px 12px;border-radius:999px}
+    /* demo interativa (abas) */
+    .tabs{margin-top:24px}
+    .tablist{display:flex;gap:8px;flex-wrap:wrap}
+    .tab{flex:1;min-width:150px;background:transparent;border:1.5px solid var(--line);color:var(--muted);font-weight:700;font-size:14.5px;padding:13px 14px;border-radius:12px;cursor:pointer;transition:border-color .15s,color .15s}
+    .tab[aria-selected="true"]{border-color:var(--accent);color:var(--ink);background:rgba(255,176,32,.08)}
+    .painel-tab{margin-top:16px;display:none}
+    .painel-tab.ativo{display:block}
+    .painel-tab .rotulo{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+    .shot{border:1px solid rgba(255,255,255,.14);border-radius:20px;overflow:hidden;background:#000}
+    .shot--wide{margin-top:8px}
+    .duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:640px){.duo{grid-template-columns:1fr}}
+    /* benefícios */
+    .benefit{display:flex;gap:14px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+    .benefit:last-child{border-bottom:none}
+    .chk{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:rgba(255,176,32,.14);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+    .benefit b{display:block;font-size:17px;font-weight:700}
+    .benefit span{color:var(--muted);font-size:15px}
+    /* prova */
+    .prova{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin-top:22px}
+    .prova ul{list-style:none;margin-top:6px}
+    .prova li{padding:10px 0 10px 26px;position:relative;font-size:15.5px;border-bottom:1px dashed var(--line)}
+    .prova li:last-child{border-bottom:none}
+    .prova li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+    code{font-family:ui-monospace,Menlo,monospace;font-size:.92em;background:rgba(255,255,255,.08);padding:2px 7px;border-radius:6px}
+    /* objeções */
+    details.obj{border:1px solid var(--line);border-radius:12px;margin-top:12px;background:rgba(255,255,255,.02)}
+    summary{cursor:pointer;padding:18px 20px;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";color:var(--accent);font-size:22px;line-height:1;flex-shrink:0}
+    details[open] summary::after{content:"–"}
+    .obj p{padding:0 20px 18px;color:var(--muted);font-size:15.5px}
+    /* cta final */
+    .final{text-align:center;padding:56px 0 40px}
+    .qr-final{width:150px;background:#fff;border-radius:16px;padding:10px;margin:28px auto 8px}
+    footer{border-top:1px solid var(--line);padding:26px 0 90px;text-align:center;color:var(--muted);font-size:13.5px}
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(10,10,15,.92);backdrop-filter:blur(10px);box-shadow:0 -4px 18px rgba(0,0,0,.5);z-index:50;display:none}
+    .sticky-cta .btn{width:100%;text-align:center;font-size:16.5px;padding:16px 20px}
+    @media (min-width:768px){.btn-grande{width:auto;min-width:340px}}
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *{transition:none!important;animation:none!important}
+      .btn:hover{transform:none}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="container">
+    <header class="topo">
+      <span class="marca"><img src="/marca/logo-kairos.png" alt="Kairos Digital" width="44" height="44"><b>TOCA&nbsp;CARD</b></span>
+      <a class="btn-mini" href="https://wa.me/5562984924326?text=Quero%20agendar%20a%20demonstra%C3%A7%C3%A3o%20da%20TOCA%20Card" target="_blank" rel="noopener noreferrer">Agendar demonstração</a>
+    </header>
+  </div>
+
+  <main id="conteudo">
+    <!-- HERO: proposta de valor + CTA no topo -->
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow"><b>Kairos Digital</b> · produto físico + app</p>
+        <h1>Seu balcão conecta em <span class="hl">um toque.</span></h1>
+        <p class="sub">A TOCA é uma peça física que abre o <strong>Instagram</strong>, a <strong>avaliação do Google</strong> e o <strong>Pix</strong> da sua loja em um toque. Mudou qualquer destino? Edita pelo celular — a peça nunca volta para a gráfica.</p>
+        <a class="btn btn-grande" id="cta-hero" href="https://wa.me/5562984924326?text=Quero%20agendar%20a%20demonstra%C3%A7%C3%A3o%20da%20TOCA%20Card" target="_blank" rel="noopener noreferrer">Agendar demonstração</a>
+        <p class="micro">WhatsApp (62) 98492-4326 · resposta em horário comercial · sem compromisso</p>
+        <figure>
+          <div class="tel-frame"><img src="img/hub-mobile.webp" alt="Tela que o cliente vê ao ler o cartão: atalhos para Instagram, avaliação do Google, Pix, agendamento e mapa" width="330" height="713"></div>
+          <figcaption class="micro">Tela real da demonstração oficial, com dados fictícios.</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <!-- VÍDEO (poster + play; MP4 chega do repositório de vídeo) -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-video">
+        <h2 class="titulo-secao" id="t-video">Veja a peça <span class="hl">trabalhando.</span></h2>
+        <p class="apoio-secao">Do toque no cartão até o cliente chegar no seu Instagram — em segundos.</p>
+        <div class="video-wrap">
+          <video id="demo-video" poster="img/hub-desktop.webp" controls preload="none" playsinline width="1400" height="788">
+            <!-- Quando o MP4 chegar do repositório de vídeo, descomentar:
+            <source src="video/demo.mp4" type="video/mp4">
+            <track kind="captions" src="video/demo.vtt" srclang="pt-BR" label="Português" default>
+            -->
+          </video>
+          <button class="play-btn" id="play-btn" type="button" aria-label="Reproduzir vídeo de demonstração (em produção)"></button>
+          <span class="video-nota" id="video-nota">Vídeo em produção · capturas reais abaixo</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- DEMO INTERATIVA curta: fluxo real com capturas reais -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-demo">
+        <h2 class="titulo-secao" id="t-demo">Explore o fluxo <span class="hl">antes de falar com a gente.</span></h2>
+        <p class="apoio-secao">Três telas reais da demonstração oficial do produto. Use as setas do teclado para trocar.</p>
+        <div class="tabs">
+          <div class="tablist" role="tablist" aria-label="Telas da demonstração">
+            <button class="tab" role="tab" id="tab-1" aria-selected="true" aria-controls="painel-1">O cliente vê</button>
+            <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="painel-2" tabindex="-1">O lojista edita</button>
+            <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="painel-3" tabindex="-1">Você acompanha</button>
+          </div>
+          <div class="painel-tab ativo" role="tabpanel" id="painel-1" aria-labelledby="tab-1">
+            <p class="rotulo">Público do cartão · leitura do QR/NFC</p>
+            <div class="shot" style="width:min(340px,86vw);margin:0 auto"><img src="img/hub-mobile.webp" alt="Hub do cartão: atalhos de Instagram, Google, Pix, agendamento e localização" width="340" height="736" loading="lazy"></div>
+          </div>
+          <div class="painel-tab" role="tabpanel" id="painel-2" aria-labelledby="tab-2" hidden>
+            <p class="rotulo">Painel do lojista · destinos editáveis</p>
+            <div class="shot" style="width:min(340px,86vw);margin:0 auto"><img src="img/painel-lojista.webp" alt="Painel do lojista: Instagram, Avaliação Google e Pix marcados como Ativos" width="340" height="736" loading="lazy"></div>
+          </div>
+          <div class="painel-tab" role="tabpanel" id="painel-3" aria-labelledby="tab-3" hidden>
+            <p class="rotulo">Painel de operação · leituras por canal</p>
+            <div class="shot shot--wide"><img src="img/painel-admin.webp" alt="Painel administrativo com vendas, leituras recentes e projeção de receita" width="680" height="422" loading="lazy"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- BENEFÍCIOS ligados ao fluxo real -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-ben">
+        <h2 class="titulo-secao" id="t-ben">O que a peça faz <span class="hl">por você.</span></h2>
+        <div style="margin-top:20px">
+          <div class="benefit"><span class="chk">✓</span><div><b>Instagram, Google e Pix em um toque</b><span>O cliente toca (ou aproxima o celular) e cai direto no seu perfil, na sua avaliação ou no seu Pix — sem digitar nada.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>Trocou o destino? A peça continua certa</b><span>Cada QR aponta para onde você mandar. A edição é pelo painel, pelo celular; a peça física fica onde está.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>NFC para celulares sem câmera na hora</b><span>A tag responde a toque, sem depender de câmera ou aplicativo instalado pelo cliente.</span></div></div>
+          <div class="benefit"><span class="chk">✓</span><div><b>Leitura real de cada uso</b><span>O painel registra o que cada leitura abriu, por canal — você sabe qual função a peça está puxando.</span></div></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROVA VERIFICÁVEL -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-prova">
+        <h2 class="titulo-secao" id="t-prova">Prova de que isso <span class="hl">existe.</span></h2>
+        <p class="apoio-secao">Nada nesta página é mockup: as telas acima vieram da demonstração oficial rodando em 27/11/2026.</p>
+        <div class="prova">
+          <ul>
+            <li>Peça física porta-copo 9×9 cm com QR (Instagram, Google, Pix) e tag NFC — descrito no repositório oficial do produto.</li>
+            <li>URL pública com contrato fixo: <code>/p/CÓDIGO</code> abre o hub do cartão; <code>/p/CÓDIGO/pix</code>, <code>/g</code> e <code>/ig</code> abrem os destinos diretos.</li>
+            <li>Painéis reais: lojista edita destinos; operação acompanha vendas, lotes e leituras por canal.</li>
+            <li>Dados das capturas são fictícios (nome “Barbearia Navalha”, PIN de demonstração) — identificados como demo em todas as peças.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- OBJEÇÕES -->
+    <div class="container">
+      <section class="bloco" aria-labelledby="t-ob">
+        <h2 class="titulo-secao" id="t-ob">O que todo mundo pergunta <span class="hl">antes de decidir.</span></h2>
+        <details class="obj"><summary>E se eu trocar meu Instagram ou meu Pix?</summary><p>Nada muda na peça. O lojista abre o painel pelo celular e atualiza o destino daquele QR. A placa física continua no balcão apontando para o lugar novo.</p></details>
+        <details class="obj"><summary>O cliente precisa baixar aplicativo?</summary><p>Não. O QR abre direto no navegador do celular (e o NFC abre a mesma URL por toque). O cliente só precisa de internet para abrir o link.</p></details>
+        <details class="obj"><summary>Quem produz a peça física?</summary><p>A própria operação do produto: produção em lotes, numeração única por peça e controle de estoque no painel. Na demonstração você vê o fluxo completo, do lote à ativação.</p></details>
+        <details class="obj"><summary>Dá para revender?</summary><p>Sim. O modelo tem cadastro de revendedor, pedidos de atacado e lote compartilhado — o painel de operação trata revenda como fluxo normal. Pergunte pelo kit inicial na demonstração.</p></details>
+      </section>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="container">
+      <section class="bloco final" aria-labelledby="t-final">
+        <h2 class="titulo-secao" id="t-final">Comece com <span class="hl">uma peça.</span></h2>
+        <p class="apoio-secao" style="margin-left:auto;margin-right:auto">Instale a TOCA no seu balcão ou comece como revendedor. Uma conversa de 10 minutos no WhatsApp mostra o caminho completo.</p>
+        <a class="btn btn-grande" id="cta-final" href="https://wa.me/5562984924326?text=Quero%20come%C3%A7ar%20com%20uma%20pe%C3%A7a%20de%20TOCA%20Card" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+        <img class="qr-final" src="img/qr-whatsapp.svg" width="150" height="150" alt="QR Code: abre o chat do WhatsApp da Kairos Digital com mensagem pronta">
+        <p class="micro">ou escaneie com a câmera do celular</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">Kairos Digital · Goiânia · 2026 — Página da campanha TOCA Card. Demonstração com dados fictícios.</div>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a class="btn" href="https://wa.me/5562984924326?text=Quero%20agendar%20a%20demonstra%C3%A7%C3%A3o%20da%20TOCA%20Card" target="_blank" rel="noopener noreferrer">Agendar demonstração</a>
+  </div>
+
+  <script>
+    (function(){
+      function track(ev, data){ try{
+        if (typeof dataLayer !== 'undefined') dataLayer.push(Object.assign({event:ev}, data||{}));
+        if (typeof fbq !== 'function') return;
+        fbq('trackCustom', ev, data||{});
+      }catch(e){} }
+
+      // Abas (padrão ARIA tablist com setas do teclado)
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+      var painels = tabs.map(function(t){return document.getElementById(t.getAttribute('aria-controls'));});
+      function ativar(i, foco){
+        tabs.forEach(function(t,j){
+          t.setAttribute('aria-selected', j===i ? 'true':'false');
+          t.tabIndex = j===i ? 0 : -1;
+          painels[j].hidden = j!==i;
+          painels[j].classList.toggle('ativo', j===i);
+        });
+        if (foco) tabs[i].focus();
+        track('demo_tab_view', {tab: tabs[i].textContent.trim(), linha: 'toca-card'});
+      }
+      tabs.forEach(function(t,i){
+        t.addEventListener('click', function(){ ativar(i,false); });
+        t.addEventListener('keydown', function(e){
+          var n = null;
+          if (e.key==='ArrowRight'||e.key==='ArrowDown') n=(i+1)%tabs.length;
+          if (e.key==='ArrowLeft'||e.key==='ArrowUp') n=(i-1+tabs.length)%tabs.length;
+          if (n!==null){ e.preventDefault(); ativar(n,true); }
+        });
+      });
+
+      // Vídeo: estado prévia enquanto o MP4 não chega
+      var video = document.getElementById('demo-video');
+      var nota = document.getElementById('video-nota');
+      var btn = document.getElementById('play-btn');
+      var semFonte = !video.querySelector('source[src]') && !video.getAttribute('src');
+      if (!semFonte) { nota.textContent = ''; btn.style.display='none'; }
+      btn.addEventListener('click', function(){
+        if (semFonte){
+          nota.textContent = 'Vídeo em produção — agende a demonstração e veja ao vivo';
+          track('video_click_preview', {linha:'toca-card'});
+        } else { video.play(); btn.style.display='none'; }
+      });
+
+      // CTAs
+      ['cta-hero','cta-final'].forEach(function(id){
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('click', function(){ track('whatsapp_cta', {posicao:id, linha:'toca-card'}); });
+      });
+
+      // Sticky CTA mobile após passar o hero
+      var sticky = document.getElementById('sticky-cta');
+      var hero = document.querySelector('.hero');
+      if (window.matchMedia('(max-width: 767px)').matches && 'IntersectionObserver' in window){
+        new IntersectionObserver(function(en){ sticky.style.display = en[0].isIntersecting ? 'none':'block'; }, {threshold:0}).observe(hero);
+      }
+    })();
+  </script>
+</body>
+</html>
